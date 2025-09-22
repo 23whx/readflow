@@ -9,8 +9,35 @@ import '../styles/global.css';
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>ReadFlow - 智能文档分析工具</title>
-		<meta name="description" content="AI驱动的文档分析工具，支持PDF、EPUB、DOCX等格式，生成摘要、大纲和思维导图" />
+		<title>ReadFlow - 智能文档分析工具 | Smart Document Analysis</title>
+		<meta name="description" content="ReadFlow 是一款 AI 驱动的文档分析与转换工具，支持 PDF/EPUB/DOCX/Markdown，提供全书解析、摘要、大纲、关键要点与思维导图，并支持多格式导出与中英双语。" />
+		<meta name="keywords" content="文档分析, PDF OCR, 文档摘要, 大纲生成, 思维导图, ReadFlow, AI 分析, 文档格式转换, Markdown, HTML, DOCX, PDF 导出" />
+
+		<!-- Open Graph -->
+		<meta property="og:type" content="website" />
+		<meta property="og:site_name" content="ReadFlow" />
+		<meta property="og:title" content="ReadFlow - 智能文档分析工具" />
+		<meta property="og:description" content="AI 驱动的文档解析、摘要、大纲与思维导图，多格式导出，中英双语。" />
+		<meta property="og:image" content="/favicon.svg" />
+
+		<!-- Twitter Card -->
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content="ReadFlow - 智能文档分析工具" />
+		<meta name="twitter:description" content="AI 驱动的文档解析、摘要、大纲与思维导图，多格式导出，中英双语。" />
+		<meta name="twitter:image" content="/favicon.svg" />
+
+		<!-- JSON-LD -->
+		<script type="application/ld+json">
+			{"
+			@context":"https://schema.org",
+			"@type":"WebApplication",
+			"name":"ReadFlow",
+			"applicationCategory":"Productivity",
+			"operatingSystem":"Web",
+			"description":"AI 驱动的文档分析与格式转换工具，支持全书解析、摘要、大纲、关键要点、思维导图与多格式导出。",
+			"offers":{"@type":"Offer","price":"0","priceCurrency":"CNY"}
+			}
+		</script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js" defer></script>
 	</head>
 	<body>
