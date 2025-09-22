@@ -1,16 +1,19 @@
 ---
-
+import App from '../components/App.tsx';
+import '../styles/global.css';
 ---
 
-<html lang="en">
+<html lang="zh-CN">
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>ReadFlow - 智能文档分析工具</title>
+		<meta name="description" content="AI驱动的文档分析工具，支持PDF、EPUB、DOCX等格式，生成摘要、大纲和思维导图" />
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js" defer></script>
 	</head>
 	<body>
-		<h1>Astro</h1>
+		<App client:load />
 	</body>
 </html>
